@@ -1,4 +1,5 @@
 import { Component, NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet,  } from '@angular/router';
 import { ExampleComponent } from './example/example.component';
@@ -11,12 +12,13 @@ import { CounterButtonPageComponent } from './counter-button-page/counter-button
 import { ParamsExampleComponent } from './params-example/params-example.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ExampleComponent, PeopleListComponent, MultipleChoiceComponent, EventHandlingComponent, CounterButtonComponent, CongratulationsMessageComponent, CommonModule, CounterButtonPageComponent, ParamsExampleComponent, NotFoundPageComponent, UserInfoFormComponent, FormsModule],
+  imports: [RouterModule, RouterOutlet, ExampleComponent, PeopleListComponent, MultipleChoiceComponent, EventHandlingComponent, CounterButtonComponent, CongratulationsMessageComponent, CommonModule, CounterButtonPageComponent, ParamsExampleComponent, NotFoundPageComponent, UserInfoFormComponent, FormsModule, NavBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
