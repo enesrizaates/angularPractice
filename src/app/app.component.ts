@@ -13,18 +13,20 @@ import { ParamsExampleComponent } from './params-example/params-example.componen
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { UserInfoDisplayComponent } from './user-info-display/user-info-display.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterModule, RouterOutlet, ExampleComponent, PeopleListComponent, MultipleChoiceComponent, EventHandlingComponent, CounterButtonComponent, CongratulationsMessageComponent, CommonModule, CounterButtonPageComponent, ParamsExampleComponent, NotFoundPageComponent, UserInfoFormComponent, FormsModule, NavBarComponent],
+  imports: [RouterModule, RouterOutlet, ExampleComponent, PeopleListComponent, MultipleChoiceComponent, EventHandlingComponent, CounterButtonComponent, CongratulationsMessageComponent, CommonModule, CounterButtonPageComponent, ParamsExampleComponent, NotFoundPageComponent, UserInfoFormComponent, FormsModule, NavBarComponent, UserInfoDisplayComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'my-angular-app';
-  
+
   // doSomething(): void {
   //   alert('Doing something ...');
   // }

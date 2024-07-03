@@ -8,6 +8,7 @@ import { PeopleListComponent } from './people-list/people-list.component';
 import { ParamsExampleComponent } from './params-example/params-example.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { UserInfoFormComponent } from './user-info-form/user-info-form.component';
+import { UserInfoDisplayComponent } from './user-info-display/user-info-display.component';
 
 export const routes: Routes = [
     {path: 'counter-button', component: CounterButtonPageComponent},
@@ -17,6 +18,7 @@ export const routes: Routes = [
     {path: 'people-list', component: PeopleListComponent},
     {path: 'params-example/:urlParam/:anotherParam', component: ParamsExampleComponent},
     {path: 'user-info-form', component: UserInfoFormComponent},
+    {path: 'user-info-display', component: UserInfoDisplayComponent},
     {path: '**', component: NotFoundPageComponent},
     {path: '', redirectTo: '/counter-button', pathMatch: 'full'}
 ];
